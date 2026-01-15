@@ -83,8 +83,8 @@ def index():
                 error_message = "エラー: SNSデータと防災システムデータの両方が必要です。（カラム名で自動判別します）"
             else:
                 try:
-                    # ★ここを最新のGemini 3.0 Flashに変更
-                    model = genai.GenerativeModel('gemini-3-flash')
+                    # ★ここを最新のGemini 2.5 Flashに変更
+                    model = genai.GenerativeModel('gemini-2.5-flash')
 
                     prompt = f"""
                     あなたは熟練した災害情報分析官です。
